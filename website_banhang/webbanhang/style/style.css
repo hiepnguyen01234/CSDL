@@ -1,0 +1,26 @@
+p.text1 {
+background-color:green;
+color:black;
+font-size:80px;
+font-family:arial;
+}
+div.box1{
+margin-top:50px;
+margin-bottom:100px;
+margin-right:350px;
+padding-left:50px;
+height:500px;
+width:650px;
+border:1px solid black;
+}
+#box2{
+margin-left:350px;
+}
+img.class1{
+height:100px;
+width:200;
+margin-top:10px;
+margin-right:50px;
+margin-bottom:50px;
+}
+

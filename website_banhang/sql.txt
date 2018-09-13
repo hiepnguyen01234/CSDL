@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS `tb_user` ( `id` int(11) NOT NULL AUTO_INCREMENT, `username` varchar(15) COLLATE utf8_unicode_ci DEFAULT NULL, `password` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL, `email` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL, `address` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL, `phone` varchar(15) COLLATE utf8_unicode_ci DEFAULT NULL, `level` tinyint(4) DEFAULT NULL COMMENT '1: admin, 0: member', PRIMARY KEY (`id`) ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1   ;
+INSERT INTO `tb_user` ( `username`, `password`, `email`,`address`, `phone`, `level` ) VALUES ('admin', 'teo', 'thehalfheart@gmail.com','Tây Hồ- Hà Nội', '0979306603', '1') ;
+
+
+CREATE TABLE IF NOT EXISTS `tb_sp` ( `id` int(11) NOT NULL, `ten` varchar(15) COLLATE utf8_unicode_ci DEFAULT NULL, `hang` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL, `soluong` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL, `damua` int(11) DEFAULT NULL, `daban` int(11) DEFAULT NULL, `img` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL, PRIMARY KEY (`id`) ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci     ;
+INSERT INTO `tb_sp` ( `id`, `ten`, `hang`, `soluong`, `damua`,`daban`,`img` ) VALUES (1,1,1,1,1,1,1)  ;
+
+CREATE TABLE IF NOT EXISTS `tb_user` ( `username` varchar(15) COLLATE utf8_unicode_ci DEFAULT NULL, `password` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL, `email` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL, `address` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL, `phone` varchar(15) COLLATE utf8_unicode_ci DEFAULT NULL, `id` int(11) NOT NULL , `ten` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL, `hang` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL, `gia` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL, PRIMARY KEY (`id`) ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci  ;
+

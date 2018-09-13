@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> website bán đồ điện gia dụng </title>
+</head>
+
+
+<body>
+<h1 style="color:green" ;> đây là một đường link </h1>
+<a href="image/" style="text-decoration:none;"><p > đây là link lấy ảnh </p></a>
+
+<h1 style="color:blue";> đây là tiêu đề ảnh </h1>
+<image src="image/1.jpg" />
+
+<h1 style="color:green" ;> đây là tiêu để văn bản </h1>
+<p> <strong> biet lam gì nua day ,do mo khó vai te </p>
+
+<h1 style="font-size:45 ";> đây là một nút bấm ,nhưng không biết dùng thế nào </h1>
+<input type="button" value="clickme!" />
+<br />
+<br />
+
+<form action="welcome.php" method="post">
+Name: <input type="text" name="name"><br>
+E-mail: <input type="text" name="email"><br>
+<input type="submit">
+</form>
+
+<?php
+echo $_SERVER['HTTP_HOST'];
+echo "<br>";
+echo $_SERVER['HTTP_REFERER'];
+echo "<br>";
+echo $_SERVER['HTTP_USER_AGENT'];
+echo "<br>";
+echo $_SERVER['SCRIPT_NAME'];
+?>
+
+</body>
+
+</html>
